@@ -13,7 +13,7 @@ entries:
       title: Metrics-Anomaly
       url: core.html
     - output: web,pdf
-      title: Title
+      title: prophet-ec2
       url: prophet-ec2.html
     output: web
     title: metrics_anomaly
