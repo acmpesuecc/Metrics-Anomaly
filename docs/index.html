@@ -6,8 +6,8 @@ title: Metrics-Anomaly
 keywords: fastai
 sidebar: home_sidebar
 
-summary: "Finds anomalies in cloud metrics data. "
-description: "Finds anomalies in cloud metrics data. "
+summary: "Forecasts and finds anomalies in cloud metrics data. "
+description: "Forecasts and finds anomalies in cloud metrics data. "
 nb_path: "index.ipynb"
 ---
 <!--
@@ -51,10 +51,10 @@ Install everything below ASAP before your friend goes ahead makes a PR :)</p>
 <h2 id="Installation">Installation<a class="anchor-link" href="#Installation"> </a></h2><p>To install, just run the following commands in order.</p>
 <h3 id="1.-Setup-a-conda-environment.">1. Setup a conda environment.<a class="anchor-link" href="#1.-Setup-a-conda-environment."> </a></h3><div class="highlight"><pre><span></span>conda create -n <span class="nb">time</span> <span class="nv">fbprophet</span><span class="o">==</span><span class="m">0</span>.7.1 plotly nbdev
 </pre></div>
-<p>Here "time" is the name of your environment, and fbprophet and plotly are the libraries being setup in it.</p>
+<p>Here "time" is the name of your environment, and fbprophet, plotly, and nbdev are the libraries being setup in it.</p>
 <h3 id="2.-Activate-your-newly-created-environment.">2. Activate your newly created environment.<a class="anchor-link" href="#2.-Activate-your-newly-created-environment."> </a></h3><div class="highlight"><pre><span></span>conda activate <span class="nb">time</span>
 </pre></div>
-<h3 id="3.-Clone-our-Repo-in-the-directory-you-want-to-work-in.">3. Clone our Repo in the directory you want to work in.<a class="anchor-link" href="#3.-Clone-our-Repo-in-the-directory-you-want-to-work-in."> </a></h3><div class="highlight"><pre><span></span>git clone https://github.com/manikyabard/Metrics-Anomaly.git <span class="o">(</span>Change it later<span class="o">)</span>
+<h3 id="3.-Clone-our-Repo-in-the-directory-you-want-to-work-in.">3. Clone our Repo in the directory you want to work in.<a class="anchor-link" href="#3.-Clone-our-Repo-in-the-directory-you-want-to-work-in."> </a></h3><div class="highlight"><pre><span></span>git clone https://github.com/acmpesuecc/Metrics-Anomaly.git
 </pre></div>
 <h3 id="4.-cd-into-our-Repo">4. cd into our Repo<a class="anchor-link" href="#4.-cd-into-our-Repo"> </a></h3><div class="highlight"><pre><span></span><span class="nb">cd</span> Metrics-Anomaly/
 </pre></div>
@@ -63,10 +63,8 @@ Install everything below ASAP before your friend goes ahead makes a PR :)</p>
 </pre></div>
 <h3 id="5.-Depending-on-the-Issue-make-your-changes">5. Depending on the Issue make your changes<a class="anchor-link" href="#5.-Depending-on-the-Issue-make-your-changes"> </a></h3><h3 id="6.Build-lib-and-docs">6.Build lib and docs<a class="anchor-link" href="#6.Build-lib-and-docs"> </a></h3><p>Now you can build the python module and docs. Run these commands from anywhere inside the project directory.</p>
 <div class="highlight"><pre><span></span>nbdev_build_lib
-</pre></div>
-<div class="highlight"><pre><span></span>nbdev_clean_nbs
-</pre></div>
-<div class="highlight"><pre><span></span>nbdev_build_docs
+nbdev_clean_nbs
+nbdev_build_docs
 </pre></div>
 <hr>
 <h2 id="&gt;-:warning:-All-these-steps-must-be-done-before-you-commit-and-make-a-PR!">&gt; :warning: <strong>All these steps must be done before you commit and make a PR!</strong><a class="anchor-link" href="#&gt;-:warning:-All-these-steps-must-be-done-before-you-commit-and-make-a-PR!"> </a></h2>
@@ -75,7 +73,7 @@ Install everything below ASAP before your friend goes ahead makes a PR :)</p>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="We-have-already-made-an-implementation-using-Facebook's-Prophet.">We have already made an implementation using Facebook's Prophet.<a class="anchor-link" href="#We-have-already-made-an-implementation-using-Facebook's-Prophet."> </a></h3><p>Checkout the project page and repo. The python quick start guide can help you get started.
+<h3 id="We-have-already-made-an-implementation-using-Facebook's-Prophet.">We have already made an implementation using Facebook's Prophet.<a class="anchor-link" href="#We-have-already-made-an-implementation-using-Facebook's-Prophet."> </a></h3><p>Checkout the project page and repo. The python quick start guide can help you get started. <br>
 Website: <a href="https://facebook.github.io/prophet/">https://facebook.github.io/prophet/</a> <br>
 Repo: <a href="https://github.com/facebook/prophet">https://github.com/facebook/prophet</a></p>
 <p>Check 01_prophet-ec2.ipynb</p>

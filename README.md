@@ -1,5 +1,5 @@
 # Metrics-Anomaly
-> Finds anomalies in cloud metrics data. 
+> Forecasts and finds anomalies in cloud metrics data. 
 
 
 ## Before you begin -
@@ -25,7 +25,7 @@ To install, just run the following commands in order.
 ```shell
 conda create -n time fbprophet==0.7.1 plotly nbdev
 ```
-Here "time" is the name of your environment, and fbprophet and plotly are the libraries being setup in it.
+Here "time" is the name of your environment, and fbprophet, plotly, and nbdev are the libraries being setup in it.
 
 ### 2. Activate your newly created environment.
 ```shell
@@ -34,7 +34,7 @@ conda activate time
 
 ### 3. Clone our Repo in the directory you want to work in.
 ```shell
-git clone https://github.com/manikyabard/Metrics-Anomaly.git (Change it later)
+git clone https://github.com/acmpesuecc/Metrics-Anomaly.git
 ```
 ### 4. cd into our Repo
 ```shell
@@ -53,11 +53,7 @@ nbdev_install_git_hooks
 Now you can build the python module and docs. Run these commands from anywhere inside the project directory.
 ```shell
 nbdev_build_lib
-```
-```shell
 nbdev_clean_nbs
-``` 
-```shell
 nbdev_build_docs
 ```
 
@@ -66,7 +62,7 @@ nbdev_build_docs
 ---
 
 ### We have already made an implementation using Facebook's Prophet.
-Checkout the project page and repo. The python quick start guide can help you get started.
+Checkout the project page and repo. The python quick start guide can help you get started. <br>
 Website: https://facebook.github.io/prophet/ <br>
 Repo: https://github.com/facebook/prophet
 
