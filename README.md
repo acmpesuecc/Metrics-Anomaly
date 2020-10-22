@@ -4,7 +4,7 @@
 
 ## Before you begin -
 
-Before you begin we recommend you to know more about -  
+Before you begin, feel free to go through the following resources -  
 * Time Series Data - Go through https://www.aptech.com/blog/introduction-to-the-fundamentals-of-time-series-data-and-analysis/  
 * AWS Cloudwatch Metrics - Go through https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html  
 
@@ -21,22 +21,27 @@ Install everything below ASAP before your friend goes ahead makes a PR :)
 
 To install, just run the following commands in order.  
 
+### 1. Setup a conda environment.
+```shell
+conda create -n time fbprophet==0.7.1 plotly nbdev
+```
+Here "time" is the name of your environment, and fbprophet and plotly are the libraries being setup in it.
 
+### 2. Activate your newly created environment.
+```shell
+conda activate time
+```
 
-
-### 1. Clone our Repo
+### 3. Clone our Repo in the directory you want to work in.
 ```shell
 git clone https://github.com/manikyabard/Metrics-Anomaly.git (Change it later)
 ```
-### 2. cd into our Repo
+### 4. cd into our Repo
 ```shell
 cd Metrics-Anomaly/
 ```
-### 3. Install nbdev
-```shell
-python -m pip install nbdev
-```
-### 4. Install git hooks  
+
+### 5. Install git hooks  
 Jupyter Notebooks can cause challenges with git conflicts, but life becomes much easier when you use nbdev. As a first step, run nbdev_install_git_hooks in the terminal from your project folder.  
 ```shell
 nbdev_install_git_hooks
@@ -44,25 +49,21 @@ nbdev_install_git_hooks
 
 ### 5. Depending on the Issue make your changes 
 
-### 6.Build lib
-Now you can create your python module. To do so, just run nbdev_build_lib from the terminal when anywhere in your project folder.
+### 6.Build lib and docs
+Now you can build the python module and docs. Run these commands from anywhere inside the project directory.
 ```shell
 nbdev_build_lib
 ```
 ```shell
 nbdev_clean_nbs
-```  
-### 7. Edit index.ipynb(If required)
-create your documentation home page and readme file by making changes to index.ipynb
-
-
-### 8. Build docs
-Now you can create your documentation. To do so, just run nbdev_build_docs from the terminal when anywhere in your project folder.  
+``` 
 ```shell
 nbdev_build_docs
 ```
+
 ---
 > :warning: **All these steps must be done before you commit and make a PR!**
 ---
 
-## We have already made an implementation using Facebook's Prophet
+### We have already made an implementation using Facebook's Prophet.
+Check 01_prophet-ec2.ipynb
