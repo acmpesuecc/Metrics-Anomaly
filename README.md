@@ -23,33 +23,38 @@ To install, just run the following commands in order.
 
 ### 1. Setup a conda environment.
 ```shell
-conda create -n time fbprophet==0.7.1 plotly nbdev
+conda create -n time plotly
 ```
-Here "time" is the name of your environment, and fbprophet, plotly, and nbdev are the libraries being setup in it.
+Here "time" is the name of your environment, and plotly is the library being setup in it.(To visualize metric plots)  
+
 
 ### 2. Activate your newly created environment.
 ```shell
 conda activate time
 ```
 
-### 3. Clone our Repo in the directory you want to work in.
+### 3. Install nbdev.
+```shell
+pip install nbdev
+```
+### 4. Clone our Repo in the directory you want to work in.
 ```shell
 git clone https://github.com/acmpesuecc/Metrics-Anomaly.git
 ```
-### 4. cd into our Repo
+### 5. cd into our Repo
 ```shell
 cd Metrics-Anomaly/
 ```
 
-### 5. Install git hooks  
+### 6. Install git hooks  
 Jupyter Notebooks can cause challenges with git conflicts, but life becomes much easier when you use nbdev. As a first step, run nbdev_install_git_hooks in the terminal from your project folder.  
 ```shell
 nbdev_install_git_hooks
 ```
 
-### 5. Depending on the Issue make your changes 
+### 7. Depending on the Issue make your changes 
 
-### 6.Build lib and docs
+### 8.Build lib and docs
 Now you can build the python module and docs. Run these commands from anywhere inside the project directory.
 ```shell
 nbdev_build_lib
@@ -66,4 +71,9 @@ Checkout the project page and repo. The python quick start guide can help you ge
 Website: https://facebook.github.io/prophet/ <br>
 Repo: https://github.com/facebook/prophet
 
-Check 01_prophet-ec2.ipynb
+Check 01_prophet-ec2.ipynb  
+
+Make sure you install fbprophet to run the above notebook  
+```shell
+pip install fbprophet==0.7.1
+```
