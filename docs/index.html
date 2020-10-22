@@ -49,19 +49,21 @@ Install everything below ASAP before your friend goes ahead makes a PR :)</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Installation">Installation<a class="anchor-link" href="#Installation"> </a></h2><p>To install, just run the following commands in order.</p>
-<h3 id="1.-Setup-a-conda-environment.">1. Setup a conda environment.<a class="anchor-link" href="#1.-Setup-a-conda-environment."> </a></h3><div class="highlight"><pre><span></span>conda create -n <span class="nb">time</span> <span class="nv">fbprophet</span><span class="o">==</span><span class="m">0</span>.7.1 plotly nbdev
+<h3 id="1.-Setup-a-conda-environment.">1. Setup a conda environment.<a class="anchor-link" href="#1.-Setup-a-conda-environment."> </a></h3><div class="highlight"><pre><span></span>conda create -n <span class="nb">time</span> plotly
 </pre></div>
-<p>Here "time" is the name of your environment, and fbprophet, plotly, and nbdev are the libraries being setup in it.</p>
+<p>Here "time" is the name of your environment, and plotly is the library being setup in it.(To visualize metric plots)</p>
 <h3 id="2.-Activate-your-newly-created-environment.">2. Activate your newly created environment.<a class="anchor-link" href="#2.-Activate-your-newly-created-environment."> </a></h3><div class="highlight"><pre><span></span>conda activate <span class="nb">time</span>
 </pre></div>
-<h3 id="3.-Clone-our-Repo-in-the-directory-you-want-to-work-in.">3. Clone our Repo in the directory you want to work in.<a class="anchor-link" href="#3.-Clone-our-Repo-in-the-directory-you-want-to-work-in."> </a></h3><div class="highlight"><pre><span></span>git clone https://github.com/acmpesuecc/Metrics-Anomaly.git
+<h3 id="3.-Install-nbdev.">3. Install nbdev.<a class="anchor-link" href="#3.-Install-nbdev."> </a></h3><div class="highlight"><pre><span></span>pip install nbdev
 </pre></div>
-<h3 id="4.-cd-into-our-Repo">4. cd into our Repo<a class="anchor-link" href="#4.-cd-into-our-Repo"> </a></h3><div class="highlight"><pre><span></span><span class="nb">cd</span> Metrics-Anomaly/
+<h3 id="4.-Clone-our-Repo-in-the-directory-you-want-to-work-in.">4. Clone our Repo in the directory you want to work in.<a class="anchor-link" href="#4.-Clone-our-Repo-in-the-directory-you-want-to-work-in."> </a></h3><div class="highlight"><pre><span></span>git clone https://github.com/acmpesuecc/Metrics-Anomaly.git
 </pre></div>
-<h3 id="5.-Install-git-hooks">5. Install git hooks<a class="anchor-link" href="#5.-Install-git-hooks"> </a></h3><p>Jupyter Notebooks can cause challenges with git conflicts, but life becomes much easier when you use nbdev. As a first step, run nbdev_install_git_hooks in the terminal from your project folder.</p>
+<h3 id="5.-cd-into-our-Repo">5. cd into our Repo<a class="anchor-link" href="#5.-cd-into-our-Repo"> </a></h3><div class="highlight"><pre><span></span><span class="nb">cd</span> Metrics-Anomaly/
+</pre></div>
+<h3 id="6.-Install-git-hooks">6. Install git hooks<a class="anchor-link" href="#6.-Install-git-hooks"> </a></h3><p>Jupyter Notebooks can cause challenges with git conflicts, but life becomes much easier when you use nbdev. As a first step, run nbdev_install_git_hooks in the terminal from your project folder.</p>
 <div class="highlight"><pre><span></span>nbdev_install_git_hooks
 </pre></div>
-<h3 id="5.-Depending-on-the-Issue-make-your-changes">5. Depending on the Issue make your changes<a class="anchor-link" href="#5.-Depending-on-the-Issue-make-your-changes"> </a></h3><h3 id="6.Build-lib-and-docs">6.Build lib and docs<a class="anchor-link" href="#6.Build-lib-and-docs"> </a></h3><p>Now you can build the python module and docs. Run these commands from anywhere inside the project directory.</p>
+<h3 id="7.-Depending-on-the-Issue-make-your-changes">7. Depending on the Issue make your changes<a class="anchor-link" href="#7.-Depending-on-the-Issue-make-your-changes"> </a></h3><h3 id="8.Build-lib-and-docs">8.Build lib and docs<a class="anchor-link" href="#8.Build-lib-and-docs"> </a></h3><p>Now you can build the python module and docs. Run these commands from anywhere inside the project directory.</p>
 <div class="highlight"><pre><span></span>nbdev_build_lib
 nbdev_clean_nbs
 nbdev_build_docs
@@ -77,6 +79,9 @@ nbdev_build_docs
 Website: <a href="https://facebook.github.io/prophet/">https://facebook.github.io/prophet/</a> <br>
 Repo: <a href="https://github.com/facebook/prophet">https://github.com/facebook/prophet</a></p>
 <p>Check 01_prophet-ec2.ipynb</p>
+<p>Make sure you install fbprophet to run the above notebook</p>
+<div class="highlight"><pre><span></span>pip install <span class="nv">fbprophet</span><span class="o">==</span><span class="m">0</span>.7.1
+</pre></div>
 
 </div>
 </div>
