@@ -66,4 +66,8 @@ nbdev_build_docs
 ---
 
 ### We have already made an implementation using Facebook's Prophet.
+Checkout the project page and repo. The python quick start guide can help you get started.
+Website: https://facebook.github.io/prophet/ <br>
+Repo: https://github.com/facebook/prophet
+
 Check 01_prophet-ec2.ipynb
