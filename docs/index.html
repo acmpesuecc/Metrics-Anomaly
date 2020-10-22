@@ -31,70 +31,53 @@ nb_path: "index.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This file will become your README and also the index of your documentation.</p>
+<h2 id="Before-you-begin--">Before you begin -<a class="anchor-link" href="#Before-you-begin--"> </a></h2><p>Before you begin we recommend you to know more about -</p>
+<ul>
+<li>Time Series Data - Go through <a href="https://www.aptech.com/blog/introduction-to-the-fundamentals-of-time-series-data-and-analysis/">https://www.aptech.com/blog/introduction-to-the-fundamentals-of-time-series-data-and-analysis/</a>  </li>
+<li>AWS Cloudwatch Metrics - Go through <a href="https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html">https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html</a>  </li>
+</ul>
+<h2 id="Prerequisites--">Prerequisites -<a class="anchor-link" href="#Prerequisites--"> </a></h2><p>We expect you to have been using Jupyter Notebooks.In case you pictured a planet instead :innocent:,<br>
+Install everything below ASAP before your friend goes ahead makes a PR :)</p>
+<ul>
+<li>Git - <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>. OSX and Linux machines typically have this already installed.  </li>
+<li>Anaconda - <a href="https://docs.anaconda.com/anaconda/install/">https://docs.anaconda.com/anaconda/install/</a>,  Jupyter Notebook should come along.(you'll need a Jupyter Notebook Server configured on your machine. If you have not installed Jupyter before, you may find the Anaconda Individual Edition the simplest to install.)  </li>
+</ul>
+<h2 id="Installation">Installation<a class="anchor-link" href="#Installation"> </a></h2><p>To install, just run the following commands in order.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Install">Install<a class="anchor-link" href="#Install"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><code>pip install your_project_name</code></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="How-to-use">How to use<a class="anchor-link" href="#How-to-use"> </a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Fill me in please! Don't forget code examples:</p>
-
-</div>
-</div>
-</div>
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span>
+<h3 id="1.-Clone-our-Repo">1. Clone our Repo<a class="anchor-link" href="#1.-Clone-our-Repo"> </a></h3><div class="highlight"><pre><span></span>git clone https://github.com/manikyabard/Metrics-Anomaly.git <span class="o">(</span>Change it later<span class="o">)</span>
 </pre></div>
-
-    </div>
+<h3 id="2.-cd-into-our-Repo">2. cd into our Repo<a class="anchor-link" href="#2.-cd-into-our-Repo"> </a></h3><div class="highlight"><pre><span></span><span class="nb">cd</span> Metrics-Anomaly/
+</pre></div>
+<h3 id="3.-Install-nbdev">3. Install nbdev<a class="anchor-link" href="#3.-Install-nbdev"> </a></h3><div class="highlight"><pre><span></span>python -m pip install nbdev
+</pre></div>
+<h3 id="4.-Install-git-hooks">4. Install git hooks<a class="anchor-link" href="#4.-Install-git-hooks"> </a></h3><p>Jupyter Notebooks can cause challenges with git conflicts, but life becomes much easier when you use nbdev. As a first step, run nbdev_install_git_hooks in the terminal from your project folder.</p>
+<div class="highlight"><pre><span></span>nbdev_install_git_hooks
+</pre></div>
+<h3 id="5.-Depending-on-the-Issue-make-your-changes">5. Depending on the Issue make your changes<a class="anchor-link" href="#5.-Depending-on-the-Issue-make-your-changes"> </a></h3><h3 id="6.Build-lib">6.Build lib<a class="anchor-link" href="#6.Build-lib"> </a></h3><p>Now you can create your python module. To do so, just run nbdev_build_lib from the terminal when anywhere in your project folder.</p>
+<div class="highlight"><pre><span></span>nbdev_build_lib
+</pre></div>
+<div class="highlight"><pre><span></span>nbdev_clean_nbs
+</pre></div>
+<h3 id="7.-Edit-index.ipynb(If-required)">7. Edit index.ipynb(If required)<a class="anchor-link" href="#7.-Edit-index.ipynb(If-required)"> </a></h3><p>create your documentation home page and readme file by making changes to index.ipynb</p>
+<h3 id="8.-Build-docs">8. Build docs<a class="anchor-link" href="#8.-Build-docs"> </a></h3><p>Now you can create your documentation. To do so, just run nbdev_build_docs from the terminal when anywhere in your project folder.</p>
+<div class="highlight"><pre><span></span>nbdev_build_docs
+</pre></div>
+<hr>
+<h2 id="&gt;-:warning:-All-these-steps-must-be-done-before-you-commit-and-make-a-PR!">&gt; :warning: <strong>All these steps must be done before you commit and make a PR!</strong><a class="anchor-link" href="#&gt;-:warning:-All-these-steps-must-be-done-before-you-commit-and-make-a-PR!"> </a></h2>
 </div>
 </div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>2</pre>
 </div>
-
-</div>
-
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="We-have-already-made-an-implementation-using-Facebook's-Prophet">We have already made an implementation using Facebook's Prophet<a class="anchor-link" href="#We-have-already-made-an-implementation-using-Facebook's-Prophet"> </a></h2>
 </div>
 </div>
-
 </div>
-    {% endraw %}
-
 </div>
  
 
