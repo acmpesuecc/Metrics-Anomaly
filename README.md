@@ -75,5 +75,5 @@ Check 01_prophet-ec2.ipynb
 
 Make sure you install fbprophet to run the above notebook  
 ```shell
-pip install fbprophet==0.7.1
+conda install -c conda-forge fbprophet
 ```
