@@ -14,7 +14,7 @@ entries:
       url: core.html
     - output: web,pdf
       title: Title
-      url: prophet-ec2.html
+      url: EDA_NYC_taxi.html
     output: web
     title: metrics_anomaly
   output: web
